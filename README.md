@@ -16,7 +16,7 @@ The parameters whose values that need to be initialized are:
 • C = call option price, P = put option price
 
 Finally, we note that n(x) is the normal (Gaussian) probability density function and N(x) is the cumulative
-normaldistributionfunction,bothofwhicharesupportedin Boost Random.  I used Black-Scholes formula to calculate the price of a call (or put) option on some underlying asset. 
+normaldistributionfunction,both of whichare supported in Boost Random.  I used Black-Scholes formula to calculate the price of a call (or put) option on some underlying asset. 
 
 This code is capable of computing option prices as a function of i) expiry time, ii) volatility, or iii)
 any of the option pricing parameters. The purpose here is to be able to input a matrix (vector of
@@ -26,10 +26,8 @@ vectors) of option parameters and receive a matrix of option prices as the resul
 
 Option sensitivities are the partial derivatives of the Black-Scholes option pricing formula with respect to one of
 its parameters. Being a partial derivative, a given greek quantity is a measure of the sensitivity of the option
-price to a small change in the formula’s parameter.  This code is able to calculate call/put: Delta, Rho, Vega, and Theta.  Additionally, it is capable of computing call/put delta prices for a monotonically increasing range of
-underlying values of S, for example 10, 11, 12, …, 50. To this end, the output will be a vector and it entails
-calling the above formula for a call delta for each value S and each computed option price will be store in a
-std::vector<double> object.
+price to a small change in the formula’s parameter.  This code is able to calculate call/put: Delta, Rho, Vega, and Theta.  Additionally, it is capable of computing call/put delta prices for a monotonically increasing range of underlying values of S, for example 10, 11, 12, …, 50. To this end, the output will be a vector and it entails
+calling the above formula for a call delta for each value S and each computed option price will be store in a std::vector<double> object.
 
 This code is capable of using divided differences to approximate option sensitivities.
 
