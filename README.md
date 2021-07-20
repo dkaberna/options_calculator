@@ -1,4 +1,4 @@
-# options_calculator
+# Options Calculator
 
 The objective for this code is to price Exact (closed) options.  This code was written while completing the Baruch C++ Financial Engineering course. 
 
