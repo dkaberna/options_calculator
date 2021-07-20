@@ -6,7 +6,7 @@ The objective for this code is to price Exact (closed) options.  This code was w
 The following features have been written in C++:
 
 1.Exact Solutions of One-Factor Plain Options.
-    This feature of code calculates plain (European) equity options (with zero dividends) and their sensitivies.  These options can be exercised at expiry time T only.
+    This feature of code calculates plain (European) equity options (with zero dividends) and their sensitivities.  These options can be exercised at expiry time T only.
 
 The parameters whose values that need to be initialized are:
 • T (expiry time/maturity). This is a number, e.g. T = 1 means one year. K (strike price).
